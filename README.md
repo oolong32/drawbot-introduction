@@ -3,11 +3,7 @@
 - *Python* ist eine Programmiersprache
 - *DrawBot* ist eine Art Grafik-Automat (für Python)
 
-## Kleine Schritte
-
-Wir werden heute Abend in DrawBot wahrscheinlich noch keine grossen Erfolge feiern. Es geht zuerst einmal vor allem darum, einige grundlegende Prinzipien einzuführen. Wenn die sitzen, habt ihr das nötige Rüstzeug für komplexe Coding-Eskapaden erster Güte.
-
-Wir schauen uns die Basics von Python an, aber auch fortgeschrittenere Konzepte wie *Schleifen* und natürlich auch schon einige DrawBot-Funktionen.
+Zuerst geht es darum, einige grundlegende Prinzipien einzuführen. Wir schauen uns die Basics von Python an, fortgeschrittenere Konzepte wie *Schleifen* und natürlich auch schon einige DrawBot-Funktionen.
 
 ## Bevor es losgeht
 
@@ -18,7 +14,7 @@ Wir schauen uns die Basics von Python an, aber auch fortgeschrittenere Konzepte 
 
 Das *Terminal* ist eine Software, in der mit Text-Kommandos mit dem Computer interagiert werden kann. Es ist ein sehr vielseitiges und mächtiges Werkzeug, wir brauchen es hier aber nur, um mit Python warm zu werden.
 
-Im Terminal „python“ eingeben
+Im Terminal „python“ eingeben.
 
 ```
 $ python
