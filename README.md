@@ -1,14 +1,14 @@
 #  Programmieren für Designer — Python und DrawBot
 
-- *Python* ist eine Programmiersprache
-- *DrawBot* ist eine Art Grafik-Automat (für Python)
+-  *Python* ist eine Programmiersprache
+-  *DrawBot* ist eine Art Grafik-Automat (für Python)
 
 Zuerst geht es darum, einige grundlegende Prinzipien einzuführen. Wir schauen uns die Basics von Python an, fortgeschrittenere Konzepte wie *Schleifen* und natürlich auch schon einige DrawBot-Funktionen.
 
 ## Bevor es losgeht
 
-- [DrawBot](drawbot.com/content/download) installieren
-- „Terminal“ öffnen (in Programme/Dienstprogramme)
+-  [DrawBot](drawbot.com/content/download) installieren
+-  „Terminal“ öffnen (in Programme/Dienstprogramme)
 
 ## Das Terminal
 
@@ -27,13 +27,14 @@ Im Terminal „python“ eingeben.
     >>> print "hello"
     Na also!
 
+
 Die *Python-Konsole* ist ein Programm, das gestartet wird, wenn man im *Terminal* „python“ eingibt. Es dient dazu, Python-Code auf die Schnelle zu testen.
 
 Dieser Text wird Details, deren Verständnis nicht unmittelbar notwendig ist, der Übersichtlichkeit halber nur streifen. Die Konsole ist ideal, um mit Befehlen, die nicht auf Anhieb verständlich sind, zu experimentieren. Probieren geht über studieren.
 
     >>> 1 + 1
     2
-    >>> 5 - 3
+    >>> 5 -  3
     2
     >>> 2 * 3
     6
@@ -46,11 +47,11 @@ Dieser Text wird Details, deren Verständnis nicht unmittelbar notwendig ist, de
 
 ## Rechnen mit Programmiersprachen
 
-\+	Addition
-\-	Subtraktion
-/	Division
-\*	Multiplikation
-%	(Modulo) Rest der Division
+    + Addition  
+    - Subtraktion  
+    / Division  
+    * Multiplikation  
+    % Modulo (Rest der Division)
 
 Abstände zwischen den Zahlen und den Operatoren sind nicht zwingend, können den Code aber leichter lesbar machen.
 
@@ -92,7 +93,7 @@ Man beachte die Funktionsweise des Kommas.
 
 *Z* ist eine Variable.
 
-[1, 2, 3] ist eine *Liste* von Werten.
+`[1, 2, 3]` ist eine *Liste* von Werten.
 
 `for … in … :` definiert einen *Loop* (Schleife). Was darunter eingerückt steht, wird für jedes Element in der *Liste* wiederholt.
 
@@ -119,9 +120,9 @@ Interessanterweise beginnt der Computer bei 0 zu zählen, hört dafür vor der i
     >>> range(10, 0, -1)
     [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 
-- es muss nicht immer bei 0 beginnen
-- es kann in grösseren Schritten als 1 gezählt werden
-- es geht auch rückwärts
+-  es muss nicht immer bei 0 beginnen
+-  es kann in grösseren Schritten als 1 gezählt werden
+-  es geht auch rückwärts
 
 Eine Gelegenheit, einmal in der [Python-Dokumentation](https://docs.python.org/2/library/functions.html#range) nachzuschauen.
 
@@ -189,21 +190,20 @@ Wofür stehen die Werte in den Klammern?
 
 ### Erklären
 
-- Koordinatensystem, Nullpunkt, X-Achse, Y-Achse
-- Masseinheit: 1 = 1 Pixel (Screen) = 1 DTP-Punkt (Print)
-- Was sind Argumente?
+-  Koordinatensystem, Nullpunkt, X-Achse, Y-Achse
+-  Masseinheit: 1 = 1 Pixel (Screen) = 1 DTP-Punkt (Print)
+-  Was sind Argumente?
 
+Es ist eine gute Gewohnheit, sich die Werte von Funktionen oder Variablen in der Konsole auszugeben, um im Auge zu behalten, was da genau läuft.
 
     newPage(400, 400)
     print height(), width()
     oval(0, 0, width(), height())
 
-Es ist eine gute Gewohnheit, sich die Werte von Funktionen oder Variablen in der Konsole auszugeben, um im Auge zu behalten, was da genau läuft.
-
 ## Aufgabe 2
 
-- was machen die Funktionen height() und width()?
-- Einen Kreis ins rechte obere Seitenviertel zeichnen.
+-  was machen die Funktionen height() und width()?
+-  Einen Kreis ins rechte obere Seitenviertel zeichnen.
 
 
     newPage(400, 400)
@@ -217,7 +217,7 @@ oder
 
 - für jedes Argument in der Funktion `oval()` eine Variable schreiben: X-Position, Y-Position, und Radius
 - Argumente gegen Variablen tauschen
-- Wie bringt man das Kreiszentrum in die Mitte der Seite?
+-  Wie bringt man das Kreiszentrum in die Mitte der Seite?
 
     newPage(400, 400)
 
@@ -225,14 +225,14 @@ oder
     y_pos = width()/2
     rad = 50 # Achtung, die oval-Funktion will Durchmesser, nicht Radius
 
-    oval(x_pos - rad, y_pos - rad, 2 * rad, 2 * rad)
+    oval(x_pos -  rad, y_pos - rad, 2 * rad, 2 * rad)
 
 ## Erklären
 
 Kommentare sind Abschnitte in Programmen, die nicht ausgeführt werden. In Python wird nicht ausgeführt, was nach einer Raute (#) steht.
 
-- Damit lassen sich Zeilen im Code ab- oder anschalten.
-- Damit lassen sich Kommentare schreiben, um ein Programm übersichtlicher zu machen und um sich später daran zu erinnern, zu was einzelne Abschnitte/Zeilen dienen.
+-  Damit lassen sich Zeilen im Code ab- oder anschalten.
+-  Damit lassen sich Kommentare schreiben, um ein Programm übersichtlicher zu machen und um sich später daran zu erinnern, zu was einzelne Abschnitte/Zeilen dienen.
 
 ---
 
@@ -250,7 +250,7 @@ In Python lassen sich zufällige Zahlenwerte generieren, dafür müssen zu Begin
     # alle Funktionen des Moduls 'random' importieren
     from random import *
 
-- `random()` generiert zufällige Zahlen zwischen 0 und 1.
+-  `random()` generiert zufällige Zahlen zwischen 0 und 1.
 - `randrange(a, b)` generiert ganze Zahlen zwischen a und b
 - `uniform(a, b)` generiert reelle Zahlen zwischen a und b
 
@@ -280,8 +280,8 @@ Der Kreis soll bitte nicht über den rechten Seitenrand reichen.
     # Durchmesser
     d = randrange(10, width())
 
-    x = randrange(width() - d)
-    y = randrange(height() - d)
+    x = randrange(width() -  d)
+    y = randrange(height() -  d)
 
     oval(x, y, d, d)
 
@@ -295,8 +295,8 @@ Die Fehlermeldungen enthalten meist Information, die darauf hindeuten, was schie
       File "random.pyc", line 193, in randrange
     ValueError: empty range for randrange()
 
-- Der Fehler passiert auf Zeile 10.
-- Es gibt ein Problem mit der Funktion randrange()
+-  Der Fehler passiert auf Zeile 10.
+-  Es gibt ein Problem mit der Funktion randrange()
 
 ## Debugging
 
@@ -319,8 +319,8 @@ Die Python-Funktionen `min(a, b)` und `max(a, b)` liefern den Tieferen, respekti
     max_width = min(width(), height())
     d = randrange(10, max_width)
 
-    x = randrange(width() - d)
-    y = randrange(height() - d)
+    x = randrange(width() -  d)
+    y = randrange(height() -  d)
 
     oval(x, y, d, d)
 
@@ -343,8 +343,8 @@ Wir machen eine Übung zum Thema Loops.
 
 ### Beachten
 
-- Doppelpunkt nach dem `for … in` Statement.
-- Den Abschnitt nach dem `for … in` Statement einrücken.
+-  Doppelpunkt nach dem `for … in` Statement.
+-  Den Abschnitt nach dem `for … in` Statement einrücken.
 
 ### Aufgabe 1
 
@@ -358,16 +358,14 @@ Mit dem Programm, das einen variablen Kreis auf eine Seite zeichnet, produzieren
 
 ### Aufgabe 2
 
-Ändere den Code in der Schleife so,
+Ändere den Code in der Schleife so, dass auf jede Seite 100 Kreise gezeichnet werden.
 
-- dass auf jeder Seite 100 Kreise gezeichnet werden.
-- dass jede Seite eine andere Hintergrundfarbe hat.
+Und so, dass dass jede Seite eine andere Hintergrundfarbe hat.
 
-
+    save()
     r = random()
     g = random()
     b = random()
-    save()
     fill(r, g, b)
     rect(0, 0, width(), height())
     restore()
