@@ -168,6 +168,14 @@ Den Inhalt des Eingabefensters können wir als Datei abspeichern. Das Suffix „
 Der Begriff *Funktion* bezeichnet in Programmiersprachen eine bestimmte Art von Befehlen. Mit der Funktion `range()` hatten wir ja schon das Vergnügen.
 Wir erkennen Funktionen daran, dass sie am Ende eine Klammer haben. Manchmal steht da *Argumente* drin, manchmal nicht.
 
+## Argumente
+
+Ein Argument bezeichnet einen Wert, der in die Klammern einer Funktion geschrieben wird.
+
+Allerdings benötigen nicht alle Funktionen ein Argument. Besipielsweise akzeptiert die Funktion `range()` eines, zwei oder drei davon.
+
+### DrawBot-eigene Funktionen
+
 DrawBot verfügt über eine grosse Anzahl eigener Funktionen.
 
 Eine davon heisst `newPage()`, sie generiert eine neue leere Seite.
@@ -187,6 +195,12 @@ In die Funktion `oval()` verschiedene Werte einfügen, ausführen und beobachten
 ### Frage
 
 Wofür stehen die Werte in den Klammern?
+
+## Koordinatensystem und Masseinheiten in DrawBot
+
+Die Position eines Elements wird mit Koordinaten angegeben. Der Nullpunkt liegt in DrawBot unten links (Processing/p5: oben links). 
+
+Die Masseinheit in DrawBot ist je nach Ausgabeformat Pixel (Screen) oder DTP-Punkt (Print).
 
 ### Erklären
 
