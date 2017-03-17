@@ -340,7 +340,7 @@ Mit der DrawBot-Funktion `saveImage()` lässt sich der Output in eine oder mehre
     # als PDF und GIF speichern
     saveImage(['~/Desktop/datei.pdf', '~/Desktop/gif'])
 
-## Loops
+## Loops
 
 Wir machen eine Übung zum Thema Loops.
 
@@ -349,7 +349,7 @@ Wir machen eine Übung zum Thema Loops.
 -  Doppelpunkt nach dem `for … in` Statement.
 -  Den Abschnitt nach dem `for … in` Statement einrücken.
 
-### Aufgabe 1
+### Aufgabe 1
 
 Mit dem Programm, das einen variablen Kreis auf eine Seite zeichnet, produzieren wir ein hundertseitiges Dokument.
 
