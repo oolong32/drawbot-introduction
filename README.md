@@ -288,7 +288,7 @@ Der Kreis soll bitte nicht über den rechten Seitenrand reichen.
 
     oval(x, y, d, d)
 
-## Error
+## Error
 
 Es gibt Fehlermeldungen. Fehlermeldungen zeigen, dass es mit einem Teil des Programms Probleme gibt.
 Die Fehlermeldungen enthalten meist Information, die darauf hindeuten, was schief gelaufen sein könnte.
