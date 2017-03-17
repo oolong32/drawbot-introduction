@@ -253,8 +253,8 @@ In Python lassen sich zufällige Zahlenwerte generieren, dafür müssen zu Begin
     from random import *
 
 -  `random()` generiert zufällige Zahlen zwischen 0 und 1.
-- `randrange(a, b)` generiert ganze Zahlen zwischen a und b
-- `uniform(a, b)` generiert reelle Zahlen zwischen a und b
+-  `randrange(a, b)` generiert ganze Zahlen zwischen a und b
+-  `uniform(a, b)` generiert reelle Zahlen zwischen a und b
 
 Auch hier kann es sich lohnen, einmal in die [Python-Doku](https://docs.python.org/2/library/random.html) zu schauen:
 
