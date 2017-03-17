@@ -244,7 +244,7 @@ P A U S E ?
 
 ## Zufallsgenerator
 
-In Python lassen sich zufällige Zahlenwerte generieren, dafür müssen zu Beginn eines Programms entsprechende Zusatzfunktionen aus der Bibliothek „random“ geladen werden.
+Zufällige Zahlenwerte lassen sich in Python auf verschiedene Arten generieren. Es gibt eine ganze Reihe von Funktionen dafür, die in einem separaten Modul namens „random“ befinden. Die Funktion `random()` wird in DrawBot automatisch geladen, alle anderen müssen zu Beginn eines Programms aus dem Modul importiert werden. 
 
     # nur die Funktion randrange() importieren
     from random import randrange
@@ -259,7 +259,7 @@ In Python lassen sich zufällige Zahlenwerte generieren, dafür müssen zu Begin
 
 Auch hier kann es sich lohnen, einmal in die [Python-Doku](https://docs.python.org/2/library/random.html) zu schauen:
 
-## Versuch mit Zufallszahlen
+## Ein Versuch mit Zufallszahlen, Errors und Debugging
 
 Wir schreiben ein Programm, das ein Kreis zufälliger Grösse an  zufälliger Position auf einer A4 Seite zeichnet.
 Es wird ein exemplarisches Probleme auftreten, darum schauen wir uns gleich auch mal an, wie man vorgehen könnte, wenn Fehlermeldungen auftreten.
@@ -288,7 +288,7 @@ Der Kreis soll bitte nicht über den rechten Seitenrand reichen.
 
     oval(x, y, d, d)
 
-## Error
+### Error
 
 Es gibt Fehlermeldungen. Fehlermeldungen zeigen, dass es mit einem Teil des Programms Probleme gibt.
 Die Fehlermeldungen enthalten meist Information, die darauf hindeuten, was schief gelaufen sein könnte.
@@ -301,13 +301,13 @@ Die Fehlermeldungen enthalten meist Information, die darauf hindeuten, was schie
 -  Der Fehler passiert auf Zeile 10.
 -  Es gibt ein Problem mit der Funktion randrange()
 
-## Debugging
+### Debugging
 
 Wir printen `height()` und die Variable d in die DrawBot-Konsole. Und versuchen zu ermitteln, in welchen Fällen der Fehler auftritt.
 
 Nach einigen Versuchen sehen wir, dass die Fehlermeldung immer dann erscheint, wenn d grösser wird als `height()`.
 
-## Ansätze zur Lösung
+### Ansätze zur Lösung
 
 Wir berechnen den Durchmesser als Wert zwischen 10 und der Seitenbreite, aber die Seite ist ein Querformat. Der Fehler tritt auf, wenn das erste Argument von `randrange()` grösser ist als das Zweite.
 
@@ -342,7 +342,7 @@ Mit der DrawBot-Funktion `saveImage()` lässt sich der Output in eine oder mehre
 
 ## Loops
 
-Wir machen eine Übung zum Thema Loops.
+Eine Übung zum Thema Loops.
 
 ### Beachten
 
@@ -364,13 +364,12 @@ Mit dem Programm, das einen variablen Kreis auf eine Seite zeichnet, produzieren
 -  Ändere den Code in der Schleife so, dass auf jede Seite 100 Kreise gezeichnet werden.
 -  Und so, dass dass jede Seite eine andere Hintergrundfarbe hat.
 
-
-    save()
-    r = random()
-    g = random()
-    b = random()
-    fill(r, g, b)
-    rect(0, 0, width(), height())
-    restore()
+```
+r = random()
+g = random()
+b = random()
+fill(r, g, b)
+rect(posX, posY, width(), height())
+```
 
 © Josef Renner, 2017
