@@ -301,7 +301,7 @@ Die Fehlermeldungen enthalten meist Information, die darauf hindeuten, was schie
 -  Der Fehler passiert auf Zeile 10.
 -  Es gibt ein Problem mit der Funktion randrange()
 
-## Debugging
+## Debugging
 
 Wir printen `height()` und die Variable d in die DrawBot-Konsole. Und versuchen zu ermitteln, in welchen Fällen der Fehler auftritt.
 
