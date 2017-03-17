@@ -372,7 +372,8 @@ fill(r, g, b)
 rect(posX, posY, width(), height())
 ```
 
+---
 
-![Creatice Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+![Creatice Commons License](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)
 
 Dieser Text kann unter den Bedingungen der [«CC BY-SA» Creative Commons Lizenz](http://creativecommons.org/licenses/by-sa/4.0/) weiterverwendet werden.
