@@ -202,18 +202,6 @@ Die Position eines Elements wird mit Koordinaten angegeben. Der Nullpunkt liegt 
 
 Die Masseinheit in DrawBot ist je nach Ausgabeformat Pixel (Screen) oder DTP-Punkt (Print).
 
-### Erklären
-
--  Koordinatensystem, Nullpunkt, X-Achse, Y-Achse
--  Masseinheit: 1 = 1 Pixel (Screen) = 1 DTP-Punkt (Print)
--  Was sind Argumente?
-
-Es ist eine gute Gewohnheit, sich die Werte von Funktionen oder Variablen in der Konsole auszugeben, um im Auge zu behalten, was da genau läuft.
-
-    newPage(400, 400)
-    print height(), width()
-    oval(0, 0, width(), height())
-
 ## Aufgabe 2
 
 -  was machen die Funktionen height() und width()?
@@ -229,8 +217,8 @@ oder
 
 ## Aufgabe 3
 
-- für jedes Argument in der Funktion `oval()` eine Variable schreiben: X-Position, Y-Position, und Radius
-- Argumente gegen Variablen tauschen
+-  für jedes Argument in der Funktion `oval()` eine Variable schreiben: X-Position, Y-Position, und Radius
+-  Argumente gegen Variablen tauschen
 -  Wie bringt man das Kreiszentrum in die Mitte der Seite?
 
     newPage(400, 400)
@@ -241,7 +229,7 @@ oder
 
     oval(x_pos -  rad, y_pos - rad, 2 * rad, 2 * rad)
 
-## Erklären
+## Kommentare
 
 Kommentare sind Abschnitte in Programmen, die nicht ausgeführt werden. In Python wird nicht ausgeführt, was nach einer Raute (#) steht.
 
