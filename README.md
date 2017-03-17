@@ -361,9 +361,9 @@ Mit dem Programm, das einen variablen Kreis auf eine Seite zeichnet, produzieren
 
 ### Aufgabe 2
 
-Ändere den Code in der Schleife so, dass auf jede Seite 100 Kreise gezeichnet werden.
+-  Ändere den Code in der Schleife so, dass auf jede Seite 100 Kreise gezeichnet werden.
+-  Und so, dass dass jede Seite eine andere Hintergrundfarbe hat.
 
-Und so, dass dass jede Seite eine andere Hintergrundfarbe hat.
 
     save()
     r = random()
