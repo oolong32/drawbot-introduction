@@ -307,7 +307,7 @@ Wir printen `height()` und die Variable d in die DrawBot-Konsole. Und versuchen 
 
 Nach einigen Versuchen sehen wir, dass die Fehlermeldung immer dann erscheint, wenn d grösser wird als `height()`.
 
-## Ansätze zur Lösung
+## Ansätze zur Lösung
 
 Wir berechnen den Durchmesser als Wert zwischen 10 und der Seitenbreite, aber die Seite ist ein Querformat. Der Fehler tritt auf, wenn das erste Argument von `randrange()` grösser ist als das Zweite.
 
