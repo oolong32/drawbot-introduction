@@ -372,4 +372,7 @@ fill(r, g, b)
 rect(posX, posY, width(), height())
 ```
 
-© Josef Renner, 2017
+
+![Creatice Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+
+Dieser Text kann unter den Bedingungen der [«CC BY-SA» Creative Commons Lizenz](http://creativecommons.org/licenses/by-sa/4.0/) weiterverwendet werden.
