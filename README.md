@@ -364,12 +364,13 @@ Mit dem Programm, das einen variablen Kreis auf eine Seite zeichnet, produzieren
 -  Ändere den Code in der Schleife so, dass auf jede Seite 100 Kreise gezeichnet werden.
 -  Und so, dass dass jede Seite eine andere Hintergrundfarbe hat.
 
-
-    r = random()
-    g = random()
-    b = random()
-    fill(r, g, b)
-    rect(posX, posY, width(), height())
+```
+r = random()
+g = random()
+b = random()
+fill(r, g, b)
+rect(posX, posY, width(), height())
+```
 
 ---
 
