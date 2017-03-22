@@ -274,7 +274,7 @@ Das Statement für weitere Bedingungen zwischen *if* und *else* lautet *elif*.
 
 Eine [Übersicht über die möglichen *Operatoren*, die zum Formulieren von Bedingungen verwendet werden können.](https://docs.python.org/2/reference/expressions.html#not-in)
 
-## ein Tipp fürs Speichern
+## Speichern mit Zeitstempel
 
 Damit gespeicherter Output nicht jedes Mal überschrieben wird, wenn das Programm ausgeführt wird, kann man einen sog. *Zeitstempel* in den Dateinamen schreiben.
 
