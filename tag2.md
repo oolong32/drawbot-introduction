@@ -50,8 +50,6 @@ Wir müssen herausfinden:
 -  wieviele Zellen auf eine Zeile gehen
 -  wieviele Zellen in eine Spalte gehen
 
-
-    ```
     newPage(300, 400)
 
     cell = 24
@@ -62,7 +60,6 @@ Wir müssen herausfinden:
     print rows, 'Zeilen und', cols, 'Spalten'
 
     # 16.667 Zeilen und 12.5 Spalten
-    ```
 
 Resultate im Float-Format können wir nicht so gut brauchen, weil wir
 
