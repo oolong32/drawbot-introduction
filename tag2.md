@@ -29,7 +29,9 @@ Wir haben am ersten Abend gelernt:
 1. Zeichne einen Kreis mit variablem Duchmesser in die Mitte der Seite.
 2. Unterteile die Seite in 10 Spalten. Zeichne in jede Spalte einen Kreis.
 
-## Raster
+---
+
+## Raster
 
 Raster dienen dazu, eine Seite in Zellen zu unterteilen. Es gibt zwei Möglichkeiten, das zu tun:
 
@@ -58,7 +60,7 @@ Wir müssen herausfinden:
 
     print rows, 'Zeilen und', cols, 'Spalten'
 
-    # 16.667 Zeilen und 12.5 Spalten
+    \# 16.667 Zeilen und 12.5 Spalten
 
 Resultate im Float-Format können wir nicht so gut brauchen, weil wir
 
