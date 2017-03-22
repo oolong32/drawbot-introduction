@@ -1,6 +1,10 @@
 # Programmieren für Designer — Python und DrawBot, Tag 2
 
+<<<<<<< HEAD
 ## Was bisher geschah
+=======
+## Was bisher geschah
+>>>>>>> f25cb8238faa7fbc01fd9792311d89953d0350b8
 
 Wir haben am ersten Abend gelernt:
 
