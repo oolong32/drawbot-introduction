@@ -1,6 +1,6 @@
 # Programmieren für Designer — Python und DrawBot, Tag 2
 
-# Was bisher geschah
+## Was bisher geschah
 
 Wir haben am ersten Abend gelernt:
 
