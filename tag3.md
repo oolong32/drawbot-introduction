@@ -1,13 +1,13 @@
 # Programmieren für Designer — Python und DrawBot, Tag 3
 
 
-## Was wir letztes Mal angeschaut haben
+## Was wir letztes Mal angeschaut haben
 
-- Raster generieren mit Schleifen
+- Raster generieren mit Schleifen
 - die DrawBot-Funktionen `translate()`, `rotate()`, `save()`, `restore()`
 - Boolsche Werte: True/False
 - Operatoren zum Vergleichen: <, >, >=, <=, ==, !=, and, or
-- Bedingungen: if/else
+- Bedingungen: if/else
 
 ## Themen heute
 
@@ -166,7 +166,7 @@ Einige *Funktionen* haben Auswirkungen, z.B. ändert `fill()` die Farbe. Andere 
 
 Bisher waren wir auf bestehende *Funktionen* angewiesen. Jetzt schauen wir uns an, wie wir selber *Funktionen* schreiben können.
 
-#### Definieren von Funktionen, Syntax
+#### Definieren von Funktionen, Syntax
 
 Funktionen werden mit dem *Schlüsselwort* `def` eingeleitet, darauf folgt der Funktionsname mit Klammer und *Argumenten* (optional) und schliesslich ein Doppelpunkt. Die Zeilen nach dem Doppelpunkt werden mit einem Tabulator eingezogen – sie werden ausgeführt, wenn die Funktion aufgerufen wird.
 
@@ -324,8 +324,8 @@ Irgendwann muss auch mal gut sein. Aber folgende Themen könntest du dir mal zu 
 
 ---
 
-[Tag 1](README.md)
-[Tag 2](tag2.md)
+- [Tag 1](README.md)
+- [Tag 2](tag2.md)
 
 ---
 

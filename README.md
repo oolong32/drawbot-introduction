@@ -420,8 +420,8 @@ rect(posX, posY, width(), height())
 
 ---
 
-[Tag 2](tag2.md)
-[Tag 3](tag3.md)
+- [Tag 2](tag2.md)
+- [Tag 3](tag3.md)
 
 ---
 

@@ -322,8 +322,8 @@ saveImage('~/Desktop/name_' + timestr + '.jpg')
 
 ---
 
-[Tag 1](README.md)
-[Tag 3](tag3.md)
+- [Tag 1](README.md)
+- [Tag 3](tag3.md)
 
 ---
 
