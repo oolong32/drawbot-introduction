@@ -69,7 +69,7 @@ Jeder Wert einer Liste hat einen *Index*. Damit ist die Reihenfolge in der Liste
 Auch hier wird bei 0 mit Zählen begonnen.
 
 ```
->>> team = ['lilo', 'samson', 'jamadu', 'lillibiggs']
+>>> team = ['lilo', 'samson', 'jamadu', 'lilibiggs']
 >>> print team[2]
 jamadu
 >>> print team[0]
