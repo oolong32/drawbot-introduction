@@ -32,6 +32,8 @@ Traceback (most recent call last):
 
 Die *Python-Konsole* ist ein Programm, das gestartet wird, wenn du im *Terminal* „python3“ eingibst. Es dient dazu, Python-Code auf die Schnelle zu testen.
 
+Die *Python-Konsole* kann mit der Tastaturkombination **ctr D** beendet werden.
+
 Dieser Text wird Details, deren Verständnis nicht unmittelbar notwendig ist, der Übersichtlichkeit halber nur streifen. Die Konsole ist ideal, um mit Befehlen, die nicht auf Anhieb verständlich sind, zu experimentieren. Probieren geht über studieren.
 
 ```
