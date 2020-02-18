@@ -14,22 +14,23 @@ Zuerst geht es darum, einige grundlegende Prinzipien einzuführen. Wir schauen u
 
 Das *Terminal* ist eine Software, in der mit Text-Kommandos mit dem Computer interagiert werden kann. Es ist ein sehr vielseitiges und mächtiges Werkzeug, wir brauchen es hier aber nur, um mit Python warm zu werden.
 
-Im Terminal „python“ eingeben.
+Im Terminal „python3“ eingeben.
+
+*Es gibt auch das Kommando „python“. Auf Apple Rechnern sind zwei Python-Versionen installiert, zwischen denen es Unterschiede gibt. In Drawbot arbeitest Du mit Version 3.*
 
 ```
-$ python
-Python 2.7.13 (default, Dec 17 2016, 23:03:43) 
-[GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)] on darwin
-Type "help", "copyright", "credits" or "license" for more information.
->>> print hello
+$ python3
+Python 3.7.5 (default, Nov  1 2019, 02:16:32)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwinType "help", "copyright", "credits" or "license" for more information.
+>>> print(hello)
 Traceback (most recent call last):
     File "<stdin>", line 1, in <module>
     NameError: name 'hello' is not defined
-    >>> print "hello"
-    Na also!
+    >>> print('hello')
+    hello
 ```
 
-Die *Python-Konsole* ist ein Programm, das gestartet wird, wenn man im *Terminal* „python“ eingibt. Es dient dazu, Python-Code auf die Schnelle zu testen.
+Die *Python-Konsole* ist ein Programm, das gestartet wird, wenn du im *Terminal* „python3“ eingibst. Es dient dazu, Python-Code auf die Schnelle zu testen.
 
 Dieser Text wird Details, deren Verständnis nicht unmittelbar notwendig ist, der Übersichtlichkeit halber nur streifen. Die Konsole ist ideal, um mit Befehlen, die nicht auf Anhieb verständlich sind, zu experimentieren. Probieren geht über studieren.
 
@@ -53,12 +54,14 @@ Dieser Text wird Details, deren Verständnis nicht unmittelbar notwendig ist, de
 ```
 + Addition  
 - Subtraktion  
-/ Division  
+/ Division
+// Division ohne Rest
 * Multiplikation  
 % Modulo (Rest der Division)
 ```
 
-Abstände zwischen den Zahlen und den Operatoren sind nicht zwingend, können den Code aber leichter lesbar machen.
+- Beachte die zwei Arten von Division: `/` ergibt immer ein Resultat mit Kommastelle, auch wenn die Rechnung aufgeht.
+- Abstände zwischen den Zahlen und den Operatoren sind nicht zwingend, können den Code aber leichter lesbar machen.
 
 ```
 >>> zwei = 2
@@ -66,7 +69,7 @@ Abstände zwischen den Zahlen und den Operatoren sind nicht zwingend, können de
 >>> zwei + drei
 (fünf)
 >>> etwas = 'hello'
->>> print etwas
+>>> print(etwas)
 (na sowas)
 ```
 
@@ -84,7 +87,7 @@ Das kann eine Zahl sein (integer, float), eine Zeichenfolge (string) oder eine a
 
 ```
 >>> name = 'Maria'
->>> print 'hoi', name
+>>> print('hoi', name)
 ```
 
 Mit dem Befehl *print* können Variablen, Zeichenfolge oder andere Werte in die Konsole geschrieben werden.
@@ -97,7 +100,7 @@ Man beachte die Funktionsweise des Kommas.
 
 ```
 >>> for z in [1, 'hoi', 5]:
-…	print z
+…	print(z)
 …
 1
 hoi
@@ -147,7 +150,7 @@ Eine Gelegenheit, einmal in der [Python-Dokumentation](https://docs.python.org/2
 
 ```
 >>> for a in range(6):
-…	print a
+…	print(a)
 …
 0
 1
@@ -179,7 +182,7 @@ Zum Aufwärmen schreiben wir ein paar Kommandos ins Eingabefenster und geben sie
 x = 100
 y = 200
 
-print x + y
+print(x + y)
 ```
 
 Neu ist, dass stehen bleibt, was wir schreiben.
@@ -251,7 +254,7 @@ oval(width()/2, height()/2, width()/2, height()/2)
 
 -  für jedes Argument in der Funktion `oval()` eine Variable schreiben: X-Position, Y-Position, und Radius
 -  Argumente gegen Variablen tauschen
--  Wie bringt man das Kreiszentrum in die Mitte der Seite?
+-  Wie bringst du das Kreiszentrum in die Mitte der Seite?
 
 ```
 newPage(400, 400)
@@ -297,7 +300,7 @@ Auch hier kann es sich lohnen, einmal in die [Python-Doku](https://docs.python.o
 ## Ein Versuch mit Zufallszahlen, Errors und Debugging
 
 Wir schreiben ein Programm, das ein Kreis zufälliger Grösse an  zufälliger Position auf einer A4 Seite zeichnet.
-Es wird ein exemplarisches Probleme auftreten, darum schauen wir uns gleich auch mal an, wie man vorgehen könnte, wenn Fehlermeldungen auftreten.
+Es wird ein exemplarisches Probleme auftreten, darum schauen wir uns gleich auch mal an, was du tun kannst, wenn Fehlermeldungen auftreten.
 
 ```
 from random import randrange
@@ -369,7 +372,7 @@ y = randrange(height() -  d)
 oval(x, y, d, d)
 ```
 
-Der hier beschriebene Ablauf ist typisch für Problemstellungen, die beim Programmieren auftreten können: Ein Plan geht nicht so auf, wie gedacht – es treten Fehler auf, die man nicht erwartet hat. Man versucht, die Ursache des Fehlers zu finden und zu korrigieren.
+Der hier beschriebene Ablauf ist typisch für Problemstellungen, die beim Programmieren auftreten können: Ein Plan geht nicht so auf, wie gedacht – es treten unerwartete Fehler auf. Du versuchst, die Ursache des Fehlers zu finden und zu korrigieren.
 Eine Lösung sollte den Fehler komplett zum Verschwinden bringen, damit er später nicht in einer Variante wieder auftreten kann (wenn z.B. das Ausgabeformat wechselt).
 
 ## Output in Datei schreiben
@@ -425,6 +428,6 @@ rect(posX, posY, width(), height())
 
 ---
 
-![Creatice Commons License](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)
+![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)
 
 Dieser Text kann unter den Bedingungen der [«CC BY-SA» Creative Commons Lizenz](https://creativecommons.org/licenses/by-sa/4.0/legalcode.de) weiterverwendet werden.

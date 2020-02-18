@@ -2,23 +2,24 @@
 
 ## Was [bisher](README.md) geschah
 
-Wir haben am ersten Abend gelernt:
+Bisher hast du gelernt:
 
--  Benutzung der Python-Konsole im Terminal
--  mathematische Operationen: +-\*/%
--  Wertzuweisung an Variable: x = n
--  Werte: integer, float, string, list
--  das Statement `print`
--  Schleifen: `for var in list:`
--  importieren aus Modulen: `from random import randrange`
--  Zufallszahlen: `random()`, `randrange()`, `uniform()`
--  Kommentare: #
--  Funktionen und Argumente: `function(arg)`
--  Grundlegende DrawBot-Funktionen: `newPage()`, `width()`, `height()`, `oval()`, `fill()`, `stroke()`, `saveImage()`
--  Fehlermeldungen
--  Grundlegende Python-Funktionen: `range()`, `min()`, `max()`
+- Benutzung der Python-Konsole im Terminal
+- mathematische Operationen: `+-\*/%`
+- speziell erwähnensert: Division ohne Rest `//`
+- Wertzuweisung an Variable: `x = n`
+- Werte: integer, float, string, list
+- die Funktion `print()`
+- Schleifen: `for var in list:`
+- importieren aus Modulen: `from random import randrange`
+- Zufallszahlen: `random()`, `randrange()`, `uniform()`
+- Kommentare: `#`
+- Funktionen und Argumente: `function(arg)`
+- Grundlegende DrawBot-Funktionen: `newPage()`, `width()`, `height()`, `oval()`, `fill()`, `stroke()`, `saveImage()`
+- Fehlermeldungen
+- Grundlegende Python-Funktionen: `range()`, `min()`, `max()`
 
-## Themen heute
+## Neue Themen
 
 -  Raster generieren mit Schleifen
 -  weitere DrawBot-Funktionen: `translate()`, `rotate()`, `save()`, `restore()`
@@ -54,10 +55,10 @@ Wir müssen herausfinden:
 newPage(300, 400)
 
 cell = 24
-cols = width() / cell
-rows = height() / cell
+cols = width() // cell
+rows = height() // cell
 
-print rows, 'Zeilen und', cols, 'Spalten'
+print(rows, 'Zeilen und', cols, 'Spalten')
 # 16.667 Zeilen und 12.5 Spalten
 ```
 
@@ -69,10 +70,10 @@ Resultate im Float-Format können wir nicht so gut brauchen, weil wir
 Mit der Funktion `int()` werden aus Float-Zahlen Integer-Zahlen.
 
 ```
-cols = int(width() / cell)
-rows = int(height() / cell)
+cols = int(width() // cell)
+rows = int(height() // cell)
 
-print rows, 'Zeilen und', cols, 'Spalten'
+print(rows, 'Zeilen und', cols, 'Spalten')
 # 16 Zeilen und 12 Spalten
 ```
 
@@ -104,7 +105,7 @@ offset_x = (width() % cell) / 2
 offset_y = (height() % cell) / 2
 ```
 
-Mit dem Prozent-Zeichen (*modulo*) kriegt man den Rest einer Division. Der Rest der Division von `width()` und `height()` durch cell entspricht dem weissen Rand rechts und oben unseres Rasters.
+Mit dem Prozent-Zeichen (*modulo*) kriegst du den Rest einer Division. Der Rest der Division von `width()` und `height()` durch cell entspricht dem weissen Rand rechts und oben unseres Rasters.
 
 Die Hälfte dieser beiden Reste ergibt die Distanz, um welche wir alle Zellen einrücken müssen, um den Raster auf der Seite einzumitten.
 
@@ -137,8 +138,8 @@ fill(None)
 stroke(0)
 
 cell = 24
-cols = int(width() / cell)
-rows = int(height() / cell)
+cols = int(width() // cell)
+rows = int(height() // cell)
 
 offset_x = (width() % cell) / 2
 offset_y = (height() % cell) / 2
@@ -193,7 +194,7 @@ Um in die Zellen des Rasters zu zeichnen, braucht es nur noch  Werte zwischen 0,
 
 Ein fundamentales Element von Programmiersprachen ist die Möglichkeit, Teile eines Programms von Bedingungen abhängig zu machen.
 
-Um die Grundlage für eine „Bedingung“ zu verstehen, kann man in der Python-Konsole (im Terminal) Folgendes versuchen:
+Um die Grundlage für eine „Bedingung“ zu verstehen, kannst du in der Python-Konsole (im Terminal) Folgendes versuchen:
 
 ```
 >>> 5 > 4
@@ -216,11 +217,11 @@ Ein sogenanntes *if-statement* führt einen Abschnitt eines Programms nur aus, w
 
 ```
 >>> if True:
-…	print 'Hoi.'
+…	print('Hoi.')
 …
 Hoi.
 >>> if False:
-…	print 'Ciao.'
+…	print('Ciao.')
 …
 # gar nix
 ```
@@ -229,7 +230,7 @@ Die beiden Beispiele oben zeigen zwei bereits evaluierte Bedingungen: Nur wenn *
 
 ```
 if 5 > 4:
-…	print 'war ja klar.'
+…	print('war ja klar.')
 …
 war ja klar.
 ```
@@ -256,9 +257,9 @@ Mit *else* lässt sich ein Abschnitt definieren, der ausgeführt wird, wenn die 
 ```
 from random import random
 >>> if random() > 0.5:
-…	print 'Kopf'
+…	print('Kopf')
 … else:
-…	print 'Zahl'
+…	print('Zahl')
 …
 # Kopf oder Zahl?
 ```
@@ -311,7 +312,7 @@ Eine [Übersicht über die möglichen *Operatoren*, die zum Formulieren von Bedi
 
 ## Speichern mit Zeitstempel
 
-Damit gespeicherter Output nicht jedes Mal überschrieben wird, wenn das Programm ausgeführt wird, kann man einen sog. *Zeitstempel* in den Dateinamen schreiben.
+Damit gespeicherter Output nicht jedes Mal überschrieben wird, wenn das Programm ausgeführt wird, kannst du einen sog. *Zeitstempel* in den Dateinamen schreiben.
 
 ```
 from time import strftime
@@ -327,6 +328,6 @@ saveImage('~/Desktop/name_' + timestr + '.jpg')
 
 ---
 
-![Creatice Commons License](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)
+![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)
 
 Dieser Text kann unter den Bedingungen der [«CC BY-SA» Creative Commons Lizenz](https://creativecommons.org/licenses/by-sa/4.0/legalcode.de) weiterverwendet werden.

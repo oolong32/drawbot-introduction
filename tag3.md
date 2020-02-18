@@ -5,9 +5,9 @@
 
 - Raster generieren mit Schleifen
 - die DrawBot-Funktionen `translate()`, `rotate()`, `save()`, `restore()`
-- Boolsche Werte: True/False
-- Operatoren zum Vergleichen: <, >, >=, <=, ==, !=, and, or
-- Bedingungen: if/else
+- Boolsche Werte: `True/False`
+- Operatoren zum Vergleichen: `<`, `>`, `>=`, `<=`, `==`, `!=`, `and`, `or`
+- Bedingungen: `if`/`else`
 
 ## Themen heute
 
@@ -25,13 +25,13 @@ Wir haben Listen kennengelernt, als wir uns zum ersten Mal mit Schleifen befasst
 liste = [12, 7, 'hoi']
 
 for ding in liste:
-    print ding
+    print(ding)
 ```
 
 Die Funktion `range()` generiert Listen von Zahlen.
 
 ```
->>> print range(5)
+>>> print(list(range(5)))
 [0, 1, 2, 3, 4]
 ```
 
@@ -40,7 +40,7 @@ Mit `range()` können wir bestimmen, wie oft eine Schleife wiederholt wird. Ist 
 
 ```
 for n in range(3):
-    print n
+    print(n)
 ```
 
 Listen können noch mehr, als Zähler für Schleifen-Durchläufe aufzustellen. Sie können beispielsweise einen Haufen Werte speichern und bei Bedarf verfügbar machen.
@@ -53,7 +53,7 @@ for n in range(10):
     randomValues.append(neuerWert)
 
 for wert in randomValues:
-    print wert
+    print(wert)
 ```
 
 Die Funktion `append()` ist eine Funktion, die einen Wert ans Ende einer Liste anfügt. 
@@ -70,13 +70,13 @@ Auch hier wird bei 0 mit Zählen begonnen.
 
 ```
 >>> team = ['lilo', 'samson', 'jamadu', 'lilibiggs']
->>> print team[2]
+>>> print(team[2])
 jamadu
->>> print team[0]
+>>> print(team[0])
 lilo
 ```
 
-Mit Angabe des *Index* lassen sich einzelne Werte aus einer Liste abfragen. Dazu hängt man eine eckige Klammer mit dem gewünschten *Index* an die Liste.
+Mit Angabe des *Index* kannst du einzelne Werte aus einer Liste abfragen. Dazu hängst du eine eckige Klammer mit dem gewünschten *Index* an die Liste.
 
 Im folgenden Beispiel werden die x- und y-Koordinaten in einer Liste gespeichert. Das kann sehr nützlich sein, wenn die gleichen Punkte mehrmals verwendet werden müssen.
 
@@ -110,7 +110,7 @@ for i in range(10):
     # kleine Liste in grosse Liste
     pos.append(new_pos)
 
-print pos
+print(pos)
 
 for p in pos:
     pos_x = p[0]
@@ -138,7 +138,7 @@ for i in range(256):
     hue = i * frac
     hues.append(hue)
 
-print hues
+print(hues)
 
 # Eine Liste mit 256 regelmässigen Schritten von 0–1
 # 0, 0.00392156862745, … , 0.996078431373, 1
@@ -183,7 +183,7 @@ def funktionsname(argumente):
 ```
 # Funktion ohne Argument
 def xyz():
-    print 'xyz'
+    print('xyz')
 
 # Aufruf der Funktion
 xyz()
@@ -194,7 +194,7 @@ Das ist nicht besonders interessant. Aber immerhin gibt es eine Auswirkung – 
 ```
 # Funktion mit Argument
 def sagmal(etwas):
-    print etwas
+    print(etwas)
 
 sagmal('Hoi')
 ```
@@ -208,7 +208,7 @@ Wir können prüfen, ob das Argument zu dem passt, was wir mit der Funktion anst
 def sagmal(etwas):
     # ist das Argument eine Zeichenfolge?
     if type(etwas) is str:
-        print etwas
+        print(etwas)
     else:
         # Fehlermeldungen in Konsole:
         raise IOError('Schwaches Argument')
@@ -235,12 +235,12 @@ Puh, da passiert ja gar nichts.
 def multDiv(wert, faktor, divisor):
 	return wert * faktor / divisor
 
-print multDiv(3, 4, 5)
+print(multDiv(3, 4, 5))
 ```
 
-`Return` gibt einen Wert zurück, aber man sieht keine Auswirkungen. Die Funktion wird, wenn sie ausgeführt wird, durch den Wert ersetzt. Diesen kann man mit `print` in die Konsole schreiben oder in eine Variable speichern.
+`Return` gibt einen Wert zurück, aber es gibt keine sichtbaren Auswirkungen. Die Funktion wird, wenn sie ausgeführt wird, durch den Wert ersetzt. Diesen kannst du mit `print()` in die Konsole schreiben oder in eine Variable speichern.
 
-### Wann braucht man selbstgebastelte Funktionen?
+### Wann braucht es selbstgebastelte Funktionen?
 
 Hier ein DrawBot-spezifisches Problem, das den Nutzen von selbstgeschriebenen Funktionen illustriert: Manchmal möchte ich Formen ausgehend von ihrem Mittelpunkt zeichen. Dafür muss ich jedes Mal die Hälfte des Durchmessers von den Koordinaten subtrahieren. Das macht den Code unleserlich und ist mühselig.
 
@@ -306,7 +306,7 @@ Die Funktion `installedFonts()` liefert eine Liste aller installierten (aktivier
 fonts = installedFonts()
 
 for font in fonts:
-    print font
+    print(font)
 ```
 
 ## KAPITEL 1000
